@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@types/bcrypt':
+        specifier: ^5.0.2
+        version: 5.0.2
+      '@types/bcryptjs':
+        specifier: ^3.0.0
+        version: 3.0.0
+      bcryptjs:
+        specifier: ^3.0.2
+        version: 3.0.2
       mongoose:
         specifier: ^8.15.1
         version: 8.15.1(@aws-sdk/credential-providers@3.825.0)(socks@2.8.4)
@@ -728,6 +737,13 @@ packages:
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
 
+  '@types/bcrypt@5.0.2':
+    resolution: {integrity: sha512-6atioO8Y75fNcbmj0G7UjI9lXN2pQ/IGJ2FWT4a/btd0Lk9lQalHLKhkgKVZ3r+spnmWUKfbMi1GEe9wyHQfNQ==}
+
+  '@types/bcryptjs@3.0.0':
+    resolution: {integrity: sha512-WRZOuCuaz8UcZZE4R5HXTco2goQSI2XxjGY3hbM/xDvwmqFWd4ivooImsMx65OKM6CtNKbnZ5YL+YwAwK7c1dg==}
+    deprecated: This is a stub types definition. bcryptjs provides its own type definitions, so you do not need this installed.
+
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
@@ -975,6 +991,10 @@ packages:
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  bcryptjs@3.0.2:
+    resolution: {integrity: sha512-k38b3XOZKv60C4E2hVsXTolJWfkGRMbILBIe2IBITXciy5bOsTKot5kDrf3ZfufQtQOUN5mXceUEpU1rTl9Uog==}
+    hasBin: true
 
   bowser@2.11.0:
     resolution: {integrity: sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==}
@@ -3247,6 +3267,14 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
+  '@types/bcrypt@5.0.2':
+    dependencies:
+      '@types/node': 20.17.57
+
+  '@types/bcryptjs@3.0.0':
+    dependencies:
+      bcryptjs: 3.0.2
+
   '@types/estree@1.0.7': {}
 
   '@types/json-schema@7.0.15': {}
@@ -3517,6 +3545,8 @@ snapshots:
   axobject-query@4.1.0: {}
 
   balanced-match@1.0.2: {}
+
+  bcryptjs@3.0.2: {}
 
   bowser@2.11.0:
     optional: true
